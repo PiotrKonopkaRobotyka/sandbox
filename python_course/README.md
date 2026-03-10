@@ -9,19 +9,18 @@ A modular, multithreaded robot controller application implemented in Python. The
 
 ## 🏗️ Project Structure
 
-robot_controller/
-├── main.py # Application entry point (CLI + main loop)
-├── config.py # JSON config loader
-├── config_example.json # Example robot configuration
-├── hardware/
-│ ├── hal.py # DCMotor Hardware Abstraction Layer
-│ └── serial_comm.py # Serial communication simulator
-├── controller/
-│ └── robot_controller.py # Command processor & safety checker
-└── monitor/
-└── robot_monitor.py # Robot state monitor & sensor filter
+    robot_controller/
+    ├── main.py # Application entry point (CLI + main loop)
+    ├── config.py # JSON config loader
+    ├── config_example.json # Example robot configuration
+    ├── hardware/
+    │ ├── hal.py # DCMotor Hardware Abstraction Layer
+    │ └── serial_comm.py # Serial communication simulator
+    ├── controller/
+    │ └── robot_controller.py # Command processor & safety checker
+    └── monitor/
+    └── robot_monitor.py # Robot state monitor & sensor filter
 
-text
 
 ## 🎯 Key Implementations
 
@@ -33,10 +32,10 @@ text
 - **Graceful Shutdown:** `KeyboardInterrupt` handler ensures a clean `sys.exit(0)` — critical in robotic systems to prevent hardware in undefined state.
 
 ## 🚀 Usage
-cd python_course/robot_controller
+    cd python_course/robot_controller
 
 # Standard run
-python3 main.py
+    python3 main.py
 
 # With verbose diagnostics and custom config
-python3 main.py --verbose --config config_example.json
+    python3 main.py --verbose --config config_example.json

@@ -8,11 +8,9 @@ Simulation experiments using **Gazebo Harmonic** integrated with ROS 2 Jazzy. Th
 
 ## 🏗️ Project Structure
 
-gazebo_ws/src/gazebo_tutorial/
-├── buidling_robot.sdf # Hand-written SDF robot model
-└── fws_robot_harmonic.zip # Complete FWS robot Gazebo package
-
-text
+    gazebo_ws/src/gazebo_tutorial/
+    ├── buidling_robot.sdf # Hand-written SDF robot model
+    └── fws_robot_harmonic.zip # Complete FWS robot Gazebo package
 
 ## 🎯 Key Implementations
 
@@ -22,10 +20,10 @@ text
 - **Physics Tuning:** Configured friction coefficients and contact parameters to reduce unrealistic simulation artifacts.
 
 ## 🚀 Usage
-cd GAZEBO/gazebo_ws
+    cd GAZEBO/gazebo_ws
 
 # Source ROS 2 environment
-source /opt/ros/jazzy/setup.bash
+    source /opt/ros/jazzy/setup.bash
 
 # Launch the simulation (package-specific launch file required)
-gz sim src/gazebo_tutorial/buidling_robot.sdf
+    gz sim src/gazebo_tutorial/buidling_robot.sdf
