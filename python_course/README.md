@@ -1,6 +1,5 @@
 ## 📄 `python_course/README.md`
 
-```markdown
 # 🐍 Python for Robotics — `robot_controller`
 
 ![Python](https://img.shields.io/badge/Python-3.12-green?logo=python)
