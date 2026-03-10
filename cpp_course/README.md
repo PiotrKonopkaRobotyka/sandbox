@@ -7,25 +7,15 @@ A standalone C++ application simulating a low-level robot controller. The projec
 
 ## 🏗️ Project Structure
 
-# 🖥️ C++ for Robotics — `robot_cpp`
+    robot_cpp/
 
-![C++](https://img.shields.io/badge/C++-17/20-blue?logo=c%2B%2B)
-![CMake](https://img.shields.io/badge/Build-CMake-green)
-
-A standalone C++ application simulating a low-level robot controller. The project focuses on applying modern C++ idioms in the context of embedded robotics software — motor control, sensor abstraction, and hardware safety logic.
-
-## 🏗️ Project Structure
-
-robot_cpp/
-├── CMakeLists.txt
-├── include/
-│ ├── motor.hpp # DCMotor class definition
-│ └── sensor.hpp # Sensor abstraction with SensorConfig & SensorType
-└── src/
-├── main.cpp # Robot Controller entry point
-└── motor.cpp # DCMotor implementation
-
-text
+    ├── CMakeLists.txt
+    ├── include/
+    │ ├── motor.hpp # DCMotor class definition
+    │ └── sensor.hpp # Sensor abstraction with SensorConfig & SensorType
+    └── src/
+    ├── main.cpp # Robot Controller entry point
+    └── motor.cpp # DCMotor implementation
 
 ## 🎯 Key Implementations
 
@@ -36,10 +26,8 @@ text
 - **STL Containers:** `std::vector<Sensor>` with `emplace_back` for in-place sensor construction and range-based `for` loops for efficient iteration.
 
 ## ⚙️ Build & Run
-
-```bash
-cd cpp_course/robot_cpp
-mkdir build && cd build
-cmake ..
-make
-./robot_cpp
+    cd cpp_course/robot_cpp
+    mkdir build && cd build
+    cmake ..
+    make
+    ./robot_cpp
