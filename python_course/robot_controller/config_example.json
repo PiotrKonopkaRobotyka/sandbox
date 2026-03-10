@@ -1,0 +1,43 @@
+{
+    "robot_name": "PythonBot",
+    "update_rate": 60,
+    "version": "1.0",
+    "sensors": [
+    {
+        "name": "lidar_front",
+        "type": "LIDAR",
+        "safe_range": [0.0, 10.0]
+    },
+    {
+        "name": "lidar_back",
+        "type": "LIDAR",
+        "safe_range": [0.0, 10.0]
+    },
+    
+    {
+        "name": "camera_top",
+        "type": "Camera",
+        "safe_range": [0.0, 10.0]  
+    },
+    {
+        "name": "imu",
+        "type": "IMU",
+        "safe_range": [0.0, 10.0]
+    },
+    {
+        "name": "accelerometer",
+        "type": "Accelerometer",
+        "safe_range": [0.0, 10.0]
+    },
+    {
+        "name": "mems_gyro",
+        "type": "Gyroscope",
+        "safe_range": [0.0, 10.0]
+    },
+    {   
+        "name": "encoder_left_wheel",
+        "type": "WheelEncoder",
+        "safe_range": [0.0, 10.0]
+    }
+]
+}

@@ -15,6 +15,8 @@ install/
 log/
 .catkin_workspace
 
-# IDEs
+# OS / IDEs
 .vscode/
 .idea/
+.DS_Store
+
