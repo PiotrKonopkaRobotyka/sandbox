@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*venv/
+.env
+
+# C++ / CMake
+build/
+bin/
+*.o
+*.so
+
+# ROS 2 / Gazebo
+install/
+log/
+.catkin_workspace
+
+# IDEs
+.vscode/
+.idea/
